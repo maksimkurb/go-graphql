@@ -347,7 +347,7 @@ func NewSchema(schemaDefinition string, queryRoot string, mutationRoot string) (
 					}
 					if typeName == queryRoot {
 						fieldName := fieldDefinition.Name.Value
-						if fieldName == "__schema" || fieldName == "__type" {
+						if fieldName == "__schema" || fieldName == "__type" || fieldName == "__typename" {
 							continue
 						}
 					}
